@@ -612,3 +612,8 @@ header {
 
 
 /*# sourceMappingURL=style.css.map */
+
+
+.owl-dots {
+  display: none !important;
+}
