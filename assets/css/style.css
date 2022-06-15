@@ -313,7 +313,7 @@ header {
   background: transparent;
   filter: Alpha(Opacity=50);
   line-height: 1;
-  border: 2px solid #fff; }
+  border:none; }
 
 .owl-controls.clickable .owl-buttons div:hover {
   filter: Alpha(Opacity=100);
@@ -323,12 +323,12 @@ header {
 
 .slider .owl-nav .owl-prev {
   position: absolute;
-  top: 40%;
+  top: 48%;
   left: 0px; }
 
 .slider .owl-nav .owl-next {
   position: absolute;
-  top: 40%;
+  top: 48%;
   right: 0px; }
 
 .slider .owl-dots .owl-dot {
@@ -452,7 +452,7 @@ header {
   .mosion-vision .single-dd {
     background-color: #f6f4f6;
     padding: 30px;
-    border-radius: 5px; }
+    border-radius: 4%; }
     @media screen and (max-width: 991px) {
       .mosion-vision .single-dd {
         margin-bottom: 30px; } }
@@ -471,7 +471,7 @@ header {
       padding: 30px 10px; } }
   .sesion-type .single-sess {
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    border-radius: 2px;
+    border-radius: 4%;
     background-color: #FFF;
     margin-bottom: 30px; }
     .sesion-type .single-sess img {
@@ -484,6 +484,9 @@ header {
   .sesion-type .sess-ok {
     padding: 57px 30px;
     text-align: center; }
+
+  .single-sess img {
+    border-radius: 4% 4% 0% 0%;  }
 
 /* ===================================== Fooer CSS ================================== */
 .footer {
@@ -635,4 +638,18 @@ header {
 
 .service_image2 {
   border-radius: 70% 30% 30% 70% / 40% 60% 40% 60%;
+}
+
+#faq_checkpoint {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.btn-social {
+  color: #2ea3f2;
+  font-size: 25px;
+  background-color: #fff;
+  border:0px;
+  box-shadow: none;
+  margin: 2px;
 }
