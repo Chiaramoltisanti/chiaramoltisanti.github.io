@@ -149,17 +149,18 @@ body {
       color: #444; }
 
 .btn-success {
-  background-color: #16acbc;
-  border-color: #16acbc; }
+  background-color: #2ea3f2;
+  border-color: #2ea3f2;
+  border-radius: 4%; }
   .btn-success:hover {
-    background-color: #16acbc !important;
-    border-color: #16acbc !important; }
+    background-color: #2ea3f2 !important;
+    border-color: #2ea3f2 !important; }
   .btn-success:active {
-    background-color: #16acbc !important;
-    border-color: #16acbc !important; }
+    background-color: #2ea3f2 !important;
+    border-color: #2ea3f2 !important; }
   .btn-success:focus {
-    background-color: #16acbc !important;
-    border-color: #16acbc !important;
+    background-color: #2ea3f2 !important;
+    border-color: #2ea3f2 !important;
     box-shadow: none !important; }
 
 .btn-info {
@@ -243,7 +244,7 @@ header {
 
 .small-menu {
   float: right;
-  color: #16acbc;
+  color: #2ea3f2;
   font-size: 32px;
   margin-top: 19px;
   margin-right: 12px; }
@@ -255,7 +256,7 @@ header {
 .slider {
   position: relative;
   padding-top: 85px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 992px) {
     .slider {
       padding-top: 71px;
       display: none; } }
@@ -390,6 +391,7 @@ header {
   .our-blog .blog-single-det {
     margin: auto;
     padding: 20px;
+    border-radius: 4%;
     z-index: 99;
     box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
     width: 90%;
@@ -415,7 +417,7 @@ header {
   background-attachment: fixed;
   background-size: cover; }
   .doctor-message .inner-lay {
-    background-color: rgba(22, 172, 188, 0.9);
+    background-color: rgba(0,129,255,0.6);
     padding: 50px;
     padding-bottom: 0px;
     color: #FFF; }
@@ -561,7 +563,7 @@ header {
 
 .gallery-title {
   font-size: 36px;
-  color: #16acbc;
+  color: #2ea3f2;
   text-align: center;
   font-weight: 500;
   margin-bottom: 70px; }
@@ -572,23 +574,23 @@ header {
   width: 7.5%;
   left: 46.5%;
   height: 45px;
-  border-bottom: 1px solid #16acbc; }
+  border-bottom: 1px solid #2ea3f2; }
 
 .filter-button {
   font-size: 18px;
-  border: 1px solid #16acbc;
+  border: 1px solid #2ea3f2;
   border-radius: 5px;
   text-align: center;
-  color: #16acbc;
+  color: #2ea3f2;
   margin-bottom: 30px; }
 
 .filter-button:hover {
   font-size: 18px;
-  border: 1px solid #16acbc;
+  border: 1px solid #2ea3f2;
   border-radius: 5px;
   text-align: center;
   color: #ffffff;
-  background-color: #16acbc; }
+  background-color: #2ea3f2; }
 
 .btn-default:active .filter-button:active {
   background-color: #a5238e;
@@ -627,3 +629,10 @@ header {
   display: none;
 }
 
+.service_image1 {
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+
+.service_image2 {
+  border-radius: 70% 30% 30% 70% / 40% 60% 40% 60%;
+}
