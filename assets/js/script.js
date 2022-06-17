@@ -5,8 +5,7 @@ $( document ).ready(function() {
         $('#menu-jk').scrollToFixed();
     }else{
         $('#menu-jk').scrollToFixed();
-    }
-    
+    }   
 })
 
 
