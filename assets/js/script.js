@@ -8,6 +8,16 @@ $( document ).ready(function() {
     }   
 })
 
+$( document ).ready(function() {
+    var elements = $('.element');
+   
+    elements.click( () => {
+        if($(window).width()<768) {
+            $('#menuCollapse').trigger('click');
+        }
+    })
+})
+
 
 $( document ).ready(function() {
 
