@@ -151,18 +151,18 @@ body {
       color: #444; }
 
 .btn-success {
-  background-color: #2ea3f2;
-  border-color: #2ea3f2;
+  background-color: #56aeff;
+  border-color: #56aeff;
   border-radius: 4%; }
   .btn-success:hover {
-    background-color: #2ea3f2 !important;
-    border-color: #2ea3f2 !important; }
+    background-color: #56aeff !important;
+    border-color: #56aeff !important; }
   .btn-success:active {
-    background-color: #2ea3f2 !important;
-    border-color: #2ea3f2 !important; }
+    background-color: #56aeff !important;
+    border-color: #56aeff !important; }
   .btn-success:focus {
-    background-color: #2ea3f2 !important;
-    border-color: #2ea3f2 !important;
+    background-color: #56aeff !important;
+    border-color: #56aeff !important;
     box-shadow: none !important; }
 
 .btn-info {
@@ -246,7 +246,7 @@ header {
 
 .small-menu {
   float: right;
-  color: #2ea3f2;
+  color: #56aeff;
   font-size: 32px;
   margin-top: 19px;
   margin-right: 12px; }
@@ -419,7 +419,7 @@ header {
   background-attachment: fixed;
   background-size: cover; }
   .doctor-message .inner-lay {
-    background-color: rgba(0,129,255,0.6);
+    background-color: rgba(86,174,255,0.6);
     padding: 50px;
     padding-bottom: 0px;
     color: #FFF; }
@@ -568,7 +568,7 @@ header {
 
 .gallery-title {
   font-size: 36px;
-  color: #2ea3f2;
+  color: #56aeff;
   text-align: center;
   font-weight: 500;
   margin-bottom: 70px; }
@@ -579,23 +579,23 @@ header {
   width: 7.5%;
   left: 46.5%;
   height: 45px;
-  border-bottom: 1px solid #2ea3f2; }
+  border-bottom: 1px solid #56aeff; }
 
 .filter-button {
   font-size: 18px;
-  border: 1px solid #2ea3f2;
+  border: 1px solid #56aeff;
   border-radius: 5px;
   text-align: center;
-  color: #2ea3f2;
+  color: #56aeff;
   margin-bottom: 30px; }
 
 .filter-button:hover {
   font-size: 18px;
-  border: 1px solid #2ea3f2;
+  border: 1px solid #56aeff;
   border-radius: 5px;
   text-align: center;
   color: #ffffff;
-  background-color: #2ea3f2; }
+  background-color: #56aeff; }
 
 .btn-default:active .filter-button:active {
   background-color: #a5238e;
@@ -648,7 +648,7 @@ header {
 }
 
 .btn-social {
-  color: #2ea3f2;
+  color: #56aeff;
   font-size: 25px;
   background-color: #fff;
   border:0px;
