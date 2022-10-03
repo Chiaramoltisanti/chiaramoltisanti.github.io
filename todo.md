@@ -12,3 +12,5 @@
 - rimuovere linkedin
 
 - fix barra app
+
+- tagliare foto services 360x360

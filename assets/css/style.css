@@ -461,7 +461,10 @@ header {
     .mosion-vision .single-dd p {
       font-size: 1.1rem;
       text-indent: 20px;
-      text-align: justify; }
+      }
+      .mosion-vision .single-dd h4 {
+        text-align: center;
+      }
     .mosion-vision .single-dd .btn {
       float: right; }
 
