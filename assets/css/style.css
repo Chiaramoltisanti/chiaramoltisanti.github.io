@@ -434,13 +434,13 @@ header {
   .doctor-message .doc-det h2 {
     font-size: 42px;
     margin-bottom: 0px; }
-  .doctor-message .doc-det span {
+  .doctor-message .doc-det span { 
     font-weight: 600;
     margin-top: -5px; }
   .doctor-message .doc-det p {
     margin-top: 30px;
     font-size: 18px;
-    text-indent: 20px; }
+    /*text-indent: 20px;*/ }
   .doctor-message .doc-det h4 {
     margin-top: 30px; }
 
@@ -460,7 +460,7 @@ header {
         margin-bottom: 30px; } }
     .mosion-vision .single-dd p {
       font-size: 1.1rem;
-      text-indent: 20px;
+      /*text-indent: 20px;*/
       }
       .mosion-vision .single-dd h4 {
         text-align: center;
@@ -507,7 +507,7 @@ header {
     margin-top: 10px; }
   .footer p {
     text-align: justify;
-    text-indent: 20px; }
+    /*text-indent: 20px;*/ }
   .footer .link-list li {
     padding: 10px;
     border-bottom: 1px solid #6C6C6C; }
@@ -556,7 +556,7 @@ header {
     font-size: 22px; }
   .about-us p {
     text-align: justify;
-    text-indent: 20px; }
+    /*text-indent: 20px;*/ }
 
 /* ===================================== Gallery Style  ================================== */
 .gallery-filter {
