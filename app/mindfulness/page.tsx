@@ -1,5 +1,4 @@
-import ServiceLayout from '@/components/ServiceLayout'
-import Breadcrumb from '@/components/Breadcrumb'
+import ServicePageLayout from '@/components/ServicePageLayout'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -7,49 +6,68 @@ export const metadata: Metadata = {
   description: 'Mindfulness per essere consapevoli nel momento presente. Riprendi il controllo della tua vita con la Dott.ssa Chiara Moltisanti.',
 }
 
+const benefits = [
+  {
+    icon: 'fas fa-brain',
+    title: 'Riduce Stress e Ansia',
+    text: 'Tecniche scientificamente provate per gestire lo stress quotidiano e ridurre i livelli di ansia.'
+  },
+  {
+    icon: 'fas fa-heart',
+    title: 'Migliora il Benessere',
+    text: 'Aumenta la consapevolezza emotiva e promuove uno stato di calma e serenità interiore.'
+  },
+  {
+    icon: 'fas fa-focus',
+    title: 'Aumenta la Concentrazione',
+    text: 'Sviluppa la capacità di rimanere presenti e concentrati nel momento attuale.'
+  }
+]
+
 export default function MindfulnessPage() {
   return (
-    <ServiceLayout>
-      <Breadcrumb currentPage="Mindfulness" />
+    <ServicePageLayout
+      title="Mindfulness"
+      subtitle="Essere consapevoli nel momento presente, senza giudizio, per riprendere il controllo della propria vita"
+      breadcrumbTitle="Mindfulness"
+      imageSrc="/assets/images/pages/mindful.jpg"
+      imageAlt="Mindfulness e meditazione"
+      benefits={benefits}
+      ctaTitle="Inizia il tuo percorso di consapevolezza"
+      ctaText="Scopri come la mindfulness può trasformare la tua vita quotidiana"
+    >
+      <h2 className="contentTitle">Cos&apos;è la mindfulness?</h2>
       
-      <div className="about-us">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 col-sm-12">
-              <img src="/assets/images/pages/mindful.jpg" alt="" />
-            </div>
-            <div className="col-md-6 col-sm-12">
-              <h2>Cos&apos;è la mindfulness?</h2><br />
-              <p>
-                La maggior parte di noi, non vive il presente. <br /> Tendi a preoccuparti troppo per il futuro, 
-                arrivando a immaginare scenari catastrofici? <br /> Oppure rimugini in continuazione sul passato, 
-                rivivendo ossessivamente esperienze negative che ti hanno causato dolore? <br /><br />
+      <p>
+        La maggior parte di noi non vive il presente. Tendi a preoccuparti troppo per il futuro, 
+        arrivando a immaginare scenari catastrofici? Oppure rimugini in continuazione sul passato, 
+        rivivendo ossessivamente esperienze negative?
+      </p>
 
-                Mindfulness significa essere consapevoli, nel momento presente e senza giudizio, di ciò che 
-                accade nella nostra mente, nel nostro corpo e intorno a noi. Significa riprendere il controllo 
-                della propria vita e saper dirigerla nella giusta direzione. <br /><br />
+      <p>
+        <strong>Mindfulness significa essere consapevoli</strong>, nel momento presente e senza giudizio, 
+        di ciò che accade nella nostra mente, nel nostro corpo e intorno a noi. Significa riprendere 
+        il controllo della propria vita e saper dirigerla nella giusta direzione.
+      </p>
 
-                Allenare la consapevolezza ti aiuta a smettere di rimuginare, a uscire dagli automatismi che 
-                ti intrappolano e non ti fanno vivere una vita piena ed appagante, abbandonando i giudizi, 
-                l&apos;ansia e lo stress. <br /><br />
+      <p>
+        Allenare la consapevolezza ti aiuta a:
+      </p>
 
-                Al contrario, non essere consapevoli, perdersi con la mente tra passato e futuro, scambiare 
-                i nostri pensieri per la realtà, mettere in atto automatismi e schemi mentali nocivi, può significare: <br />
+      <ul>
+        <li>Smettere di rimuginare continuamente</li>
+        <li>Uscire dagli automatismi che ti intrappolano</li>
+        <li>Vivere una vita più piena e appagante</li>
+        <li>Abbandonare giudizi, ansia e stress</li>
+        <li>Cogliere opportunità importanti</li>
+        <li>Migliorare i rapporti con gli altri</li>
+      </ul>
 
-                Sprecare la vita che stiamo vivendo.
-                Soffrire maggiormente di ansia, stress e depressione con tutte le conseguenze 
-                fisiche negative che possono derivarne.
-                Perdere occasioni e opportunità importanti.
-                Vivere incomprensioni nei rapporti con gli altri.
-                Sentirsi più infelici o insoddisfatti.
-                La meditazione della mindfulness rappresenta uno strumento potente, scientificamente riconosciuto, 
-                applicato anche in ambito clinico, che può essere integrato nella tua pratica lavorativa o 
-                nella vita quotidiana, in maniera semplice e immediata, attraverso la pratica formale e informale.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </ServiceLayout>
+      <p>
+        La meditazione mindfulness è uno <strong>strumento scientificamente riconosciuto</strong>, 
+        applicato anche in ambito clinico, che può essere integrato nella tua vita quotidiana 
+        in maniera semplice e immediata.
+      </p>
+    </ServicePageLayout>
   )
 }

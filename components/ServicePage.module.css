@@ -1,0 +1,249 @@
+.serviceHero {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 35px 0 30px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.serviceHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23ffffff" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="%23ffffff" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.heroTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #495057;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.heroIcon {
+  display: none;
+}
+
+.contentSection {
+  padding: 80px 0;
+  background: white;
+}
+
+.imageContainer {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imageContainer:hover {
+  transform: translateY(-10px);
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contentText {
+  padding-left: 40px;
+}
+
+.contentTitle {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.contentTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #56aeff, #007bff);
+  border-radius: 2px;
+}
+
+.contentText p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.contentText ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contentText li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #6c757d;
+}
+
+.contentText li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #56aeff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, #56aeff 0%, #007bff 100%);
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+}
+
+.ctaTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.ctaText {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.ctaButton {
+  background: white;
+  color: #56aeff;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  color: #007bff;
+  text-decoration: none;
+}
+
+.benefitsSection {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.benefitCard {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-5px);
+}
+
+.benefitIcon {
+  font-size: 2.5rem;
+  color: #56aeff;
+  margin-bottom: 20px;
+}
+
+.benefitTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 15px;
+}
+
+.benefitText {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .serviceHero {
+    padding: 25px 0 20px 0;
+  }
+  
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .heroIcon {
+    display: none;
+  }
+  
+  .contentText {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+  
+  .contentTitle {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .contentTitle::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .ctaTitle {
+    font-size: 1.6rem;
+  }
+  
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

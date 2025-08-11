@@ -5,6 +5,11 @@ interface ServiceLayoutProps {
 }
 
 export default function ServiceLayout({ children }: ServiceLayoutProps) {
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '393123456789'
+  const whatsappMessage = encodeURIComponent(
+    'Salve Dott.ssa Moltisanti, ho visto il suo sito e vorrei avere informazioni sui suoi servizi.'
+  )
+
   return (
     <>
       <header id="menu-jk">
@@ -21,23 +26,22 @@ export default function ServiceLayout({ children }: ServiceLayoutProps) {
               </div>
 
               <div className="col-sm-2 d-none d-lg-block">
-                <div className="btn-group" role="group" aria-label="Basic example">
-                  <a target="_blank" href="https://www.instagram.com/psicologamoltisantichiara/?hl=en">
-                    <button type="button" className="btn btn-social">
-                      <i className="fab fa-instagram"></i>
-                    </button>
-                  </a>
-                  <a target="_blank" href="https://www.facebook.com/chiara.moltisanti.96">
-                    <button type="button" className="btn btn-social">
-                      <i className="fab fa-facebook"></i>
-                    </button>
-                  </a>
-                  <a target="_blank" href="https://www.google.com/maps/dir//Via+degli+Aceri,+29,+97100+Ragusa,+RG/@36.9248549,14.7095821,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x131199a953d98ba1:0x65c052f8a3177955!2m2!1d14.7117708!2d36.9248506">
-                    <button type="button" className="btn btn-social">
-                      <i className="fa fa-map-marker" aria-hidden="true"></i>
-                    </button>
-                  </a>
-                </div>
+                <a 
+                  href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-success"
+                  style={{
+                    borderRadius: '25px',
+                    padding: '10px 20px',
+                    fontWeight: '600',
+                    fontSize: '0.9rem',
+                    textDecoration: 'none'
+                  }}
+                >
+                  <i className="fab fa-whatsapp me-2"></i>
+                  Contattami
+                </a>
               </div>
             </div>
           </div>
