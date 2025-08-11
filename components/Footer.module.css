@@ -1,0 +1,278 @@
+.footer {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 0 60px 0;
+  margin-top: 100px;
+  border-top: 3px solid #56aeff;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #56aeff, transparent);
+}
+
+.footer h2 {
+  color: #56aeff;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.footer h4 {
+  color: #495057;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #56aeff;
+  border-radius: 1px;
+}
+
+.footer p {
+  line-height: 1.8;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.contactItem:hover {
+  transform: translateX(5px);
+}
+
+.contactItem i {
+  width: 20px;
+  margin-right: 12px;
+  color: #56aeff;
+  font-size: 1.1rem;
+}
+
+.footer a {
+  color: #56aeff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.socialLinks {
+  margin-bottom: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.socialLinks a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: white;
+  color: #6c757d;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.socialLinks a:hover {
+  color: white;
+  background: #56aeff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(86, 174, 255, 0.4);
+}
+
+.copy {
+  background: linear-gradient(135deg, #e9ecef, #dee2e6);
+  padding: 25px 0;
+  border-top: 1px solid #dee2e6;
+  position: relative;
+}
+
+.copy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #56aeff, transparent);
+}
+
+.copy a {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.copy a:hover {
+  color: #495057;
+}
+
+.copy .fa-heart {
+  color: #dc3545;
+}
+
+.mapContainer {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin-bottom: 50px;
+  transition: transform 0.3s ease;
+}
+
+.mapContainer:hover {
+  transform: translateY(-5px);
+}
+
+.mapTitle {
+  color: #495057;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.mapTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #56aeff, #007bff);
+  border-radius: 2px;
+}
+
+.mapOverlay {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-width: 320px;
+  z-index: 10;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mapInfo h5 {
+  color: #56aeff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.mapInfo p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.mapInfo .btn {
+  background: linear-gradient(135deg, #56aeff, #007bff);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(86, 174, 255, 0.3);
+}
+
+.mapInfo .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(86, 174, 255, 0.4);
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 0 40px 0;
+    text-align: center;
+  }
+  
+  .footer h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .footer h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .contactItem {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .socialLinks {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+  .mapOverlay {
+    position: static;
+    background: white;
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .mapContainer {
+    margin-bottom: 40px;
+  }
+  
+  .mapTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 40px 0 30px 0;
+  }
+  
+  .mapOverlay {
+    padding: 20px;
+  }
+  
+  .socialLinks a {
+    width: 45px;
+    height: 45px;
+  }
+}

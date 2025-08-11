@@ -1,0 +1,11 @@
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+.hide_arr {
+  display: none;
+}
+
+/* Ensure Bootstrap and custom styles work together */
+@import url('/assets/css/style.css');
