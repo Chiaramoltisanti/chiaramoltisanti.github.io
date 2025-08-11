@@ -4,15 +4,7 @@
   "buildCommand": "npm run build",
   "outputDirectory": "out",
   "trailingSlash": true,
-  "env": {
-    "NEXT_PUBLIC_WHATSAPP_NUMBER": "@whatsapp_number",
-    "NEXT_PUBLIC_EMAIL": "@email",
-    "NEXT_PUBLIC_INSTAGRAM_URL": "@instagram_url",
-    "NEXT_PUBLIC_FACEBOOK_URL": "@facebook_url",
-    "NEXT_PUBLIC_STUDIO_ADDRESS": "@studio_address",
-    "NEXT_PUBLIC_GOOGLE_MAPS_URL": "@google_maps_url",
-    "NEXT_PUBLIC_GOOGLE_MAPS_EMBED": "@google_maps_embed"
-  },
+
   "headers": [
     {
       "source": "/(.*)",

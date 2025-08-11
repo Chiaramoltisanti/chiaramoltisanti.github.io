@@ -85,17 +85,23 @@ npm run start
    - **Output Directory**: `out` (per static export)
 
 5. **Aggiungi le variabili d'ambiente:**
-   - Vai in "Environment Variables"
-   - Aggiungi tutte le variabili `NEXT_PUBLIC_*`:
-     ```
-     NEXT_PUBLIC_WHATSAPP_NUMBER=393123456789
-     NEXT_PUBLIC_EMAIL=psicologamoltisantichiara@gmail.com
-     NEXT_PUBLIC_INSTAGRAM_URL=https://www.instagram.com/psicologamoltisantichiara/?hl=en
-     NEXT_PUBLIC_FACEBOOK_URL=https://www.facebook.com/chiara.moltisanti.96
-     NEXT_PUBLIC_STUDIO_ADDRESS=Via degli Aceri, 29, 97100 Ragusa, RG
-     NEXT_PUBLIC_GOOGLE_MAPS_URL=https://www.google.com/maps/dir//Via+degli+Aceri,+29,+97100+Ragusa,+RG/@36.9248549,14.7095821,17z
-     NEXT_PUBLIC_GOOGLE_MAPS_EMBED=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093747!2d14.709582115315!3d36.92485497993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x131199a953d98ba1%3A0x65c052f8a3177955!2sVia%20degli%20Aceri%2C%2029%2C%2097100%20Ragusa%20RG%2C%20Italy!5e0!3m2!1sen!2sit
-     ```
+   - Clicca su "Environment Variables" nella configurazione del progetto
+   - Aggiungi una per una le seguenti variabili:
+   
+   | Nome | Valore | Ambiente |
+   |------|--------|----------|
+   | `NEXT_PUBLIC_WHATSAPP_NUMBER` | `393123456789` | Production, Preview, Development |
+   | `NEXT_PUBLIC_EMAIL` | `psicologamoltisantichiara@gmail.com` | Production, Preview, Development |
+   | `NEXT_PUBLIC_INSTAGRAM_URL` | `https://www.instagram.com/psicologamoltisantichiara/?hl=en` | Production, Preview, Development |
+   | `NEXT_PUBLIC_FACEBOOK_URL` | `https://www.facebook.com/chiara.moltisanti.96` | Production, Preview, Development |
+   | `NEXT_PUBLIC_STUDIO_ADDRESS` | `Via degli Aceri, 29, 97100 Ragusa, RG` | Production, Preview, Development |
+   | `NEXT_PUBLIC_GOOGLE_MAPS_URL` | `https://www.google.com/maps/dir//Via+degli+Aceri,+29,+97100+Ragusa,+RG/@36.9248549,14.7095821,17z` | Production, Preview, Development |
+   | `NEXT_PUBLIC_GOOGLE_MAPS_EMBED` | `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093747!2d14.709582115315!3d36.92485497993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x131199a953d98ba1%3A0x65c052f8a3177955!2sVia%20degli%20Aceri%2C%2029%2C%2097100%20Ragusa%20RG%2C%20Italy!5e0!3m2!1sen!2sit` | Production, Preview, Development |
+   
+   **⚠️ IMPORTANTE**: 
+   - Seleziona tutti e tre gli ambienti (Production, Preview, Development) per ogni variabile
+   - Sostituisci i valori di esempio con quelli reali
+   - Non usare virgolette nei valori
 
 6. **Deploy:**
    - Clicca "Deploy"
@@ -166,9 +172,20 @@ npm run build
 npm install
 ```
 
+### Errore: "Secret does not exist"
+```
+Environment Variable "NEXT_PUBLIC_WHATSAPP_NUMBER" references Secret "whatsapp_number", which does not exist.
+```
+**Soluzione**: 
+- Non usare il file `vercel.json` per le variabili d'ambiente
+- Aggiungi le variabili tramite il dashboard Vercel
+- Rimuovi la sezione `env` da `vercel.json` se presente
+
 ### Variabili d'Ambiente Non Funzionano
 - Assicurati che abbiano il prefisso `NEXT_PUBLIC_`
+- Seleziona tutti gli ambienti (Production, Preview, Development)
 - Riavvia il deploy dopo aver aggiunto variabili
+- Non usare virgolette nei valori delle variabili
 
 ### Immagini Non Si Caricano
 - Verifica che siano in `public/assets/`
