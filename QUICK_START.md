@@ -24,12 +24,7 @@ npm run start:dev
 
 ## Deploy su Vercel
 
-### Metodo Automatico
-```bash
-npm run deploy
-```
-
-### Metodo Manuale
+### Metodo Semplice (Consigliato)
 1. Push su GitHub:
    ```bash
    git add .
@@ -37,7 +32,18 @@ npm run deploy
    git push
    ```
 
-2. Vai su [vercel.com](https://vercel.com) e importa il repository
+2. Vai su [vercel.com](https://vercel.com):
+   - Accedi con GitHub
+   - Clicca "New Project"
+   - Seleziona il repository
+   - **NON modificare** Build Command o Output Directory
+   - Aggiungi le variabili d'ambiente
+   - Clicca "Deploy"
+
+### Metodo Automatico (Script)
+```bash
+npm run deploy
+```
 
 ## Configurazione Variabili d'Ambiente
 

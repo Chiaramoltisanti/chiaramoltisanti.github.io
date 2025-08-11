@@ -80,9 +80,11 @@ npm run start
 4. **Configura il progetto:**
    - **Project Name**: `psicologa-chiara-moltisanti`
    - **Framework Preset**: Next.js (rilevato automaticamente)
-   - **Root Directory**: `./` (default)
-   - **Build Command**: `npm run build` (default)
-   - **Output Directory**: `out` (per static export)
+   - **Root Directory**: `./` (lascia default)
+   - **Build Command**: Lascia vuoto (Vercel rileva automaticamente)
+   - **Output Directory**: Lascia vuoto (Vercel rileva automaticamente)
+   
+   ⚠️ **Importante**: Non modificare Build Command e Output Directory - Vercel rileva automaticamente la configurazione `output: 'export'` da `next.config.js`
 
 5. **Aggiungi le variabili d'ambiente:**
    - Clicca su "Environment Variables" nella configurazione del progetto
@@ -171,6 +173,15 @@ npm run build
 # Verifica le dipendenze
 npm install
 ```
+
+### Errore: "routes-manifest.json couldn't be found"
+```
+The file "/vercel/path0/out/routes-manifest.json" couldn't be found. This is often caused by a misconfiguration in your project.
+```
+**Soluzione**: 
+- Rimuovi il file `vercel.json` se presente
+- Lascia che Vercel rilevi automaticamente la configurazione Next.js
+- Non specificare `buildCommand` o `outputDirectory` manualmente
 
 ### Errore: "Secret does not exist"
 ```
