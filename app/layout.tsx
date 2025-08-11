@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './globals.css'
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: 'Psicologa Ragusa e Online | Dott.ssa Chiara Moltisanti',
@@ -35,7 +36,10 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/style.css" />
         <SpeedInsights dsn="7TCpAxeNPUQW0yTDjb7NXQcd5YN" />
       </head>
-      <body>{children}</body>
+      <body>
+        <Analytics />
+        {children}
+      </body>
     </html>
   )
 }
