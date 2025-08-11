@@ -48,9 +48,14 @@ cp .env.example .env.local
 Prima del deploy, testa che tutto funzioni:
 
 ```bash
+# Build del progetto (genera la cartella out/)
 npm run build
+
+# Serve i file statici dalla cartella out/
 npm run start
 ```
+
+**Nota**: Con `output: 'export'` il progetto genera file statici nella cartella `out/` che vengono serviti con `serve`.
 
 ## 🚀 Deploy su Vercel
 

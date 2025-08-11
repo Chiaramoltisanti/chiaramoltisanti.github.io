@@ -1,18 +1,9 @@
 {
   "version": 2,
   "name": "psicologa-chiara-moltisanti",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "out",
+  "trailingSlash": true,
   "env": {
     "NEXT_PUBLIC_WHATSAPP_NUMBER": "@whatsapp_number",
     "NEXT_PUBLIC_EMAIL": "@email",

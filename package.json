@@ -5,11 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "build:static": "next build",
+    "start": "npx serve@latest out",
+    "start:dev": "next start",
     "lint": "next lint",
     "export": "next build",
     "deploy": "./scripts/deploy.sh",
-    "preview": "npm run build && npm run start"
+    "preview": "npm run build && npm run start",
+    "dev:server": "cp next.config.dev.js next.config.js && next dev"
   },
   "dependencies": {
     "next": "14.0.0",

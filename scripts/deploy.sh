@@ -58,6 +58,7 @@ fi
 print_status "Testando il build locale..."
 if npm run build; then
     print_success "Build locale completato con successo!"
+    print_status "File statici generati in ./out/"
 else
     print_error "Build locale fallito. Correggi gli errori prima del deploy."
     exit 1
