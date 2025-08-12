@@ -34,6 +34,44 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/plugins/slider/css/owl.carousel.min.css" />
         <link rel="stylesheet" href="/assets/plugins/slider/css/owl.theme.default.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
+        
+        {/* Schema Markup per SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Psychologist",
+              "name": "Dott.ssa Chiara Moltisanti",
+              "description": "Psicologa specializzata in ansia, stress, mindfulness, terapia online e disturbi specifici dell'apprendimento",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Via degli Aceri, 29",
+                "addressLocality": "Ragusa",
+                "postalCode": "97100",
+                "addressRegion": "Sicilia",
+                "addressCountry": "IT"
+              },
+              "areaServed": ["Ragusa", "Sicilia", "Italia", "Online"],
+              "availableLanguage": "Italian",
+              "url": "https://www.psicologa-ragusa.it",
+              "sameAs": [
+                "https://www.instagram.com/psicologamoltisantichiara",
+                "https://www.facebook.com/chiara.moltisanti.96"
+              ],
+              "serviceType": [
+                "Consulenza Psicologica",
+                "Sostegno Psicologico", 
+                "Mindfulness",
+                "Tecniche di Rilassamento",
+                "Terapia a Seduta Singola",
+                "Terapia Online",
+                "Disturbi Specifici dell'Apprendimento"
+              ],
+              "medicalSpecialty": "Psychology"
+            })
+          }}
+        />
         <SpeedInsights dsn="7TCpAxeNPUQW0yTDjb7NXQcd5YN" />
       </head>
       <body>
